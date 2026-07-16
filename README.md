@@ -16,5 +16,9 @@ This project demonstrates a simple Python web scraper using BeautifulSoup and a 
    python scrape_example.py
 3. Open index.html in a browser to view the website.
 
+Open in a browser to view the website.
+
+https://psharmaner-cell.github.io/web-scraping-demo/
+
 ## GitHub
 Repository name suggestion: web-scraping-demo
