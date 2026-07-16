@@ -3,35 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Scraping Demo</title>
+    <title>Web Scraping Demo Chatbot</title>
+    <meta name="description" content="A GitHub Pages-compatible static chatbot UI for a web scraping demo." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <h1>Web Scraping & Dataset Project</h1>
-      <p>Collect public web data, build a custom dataset, and share your work online.</p>
-      <a class="btn" href="#dataset">View Demo</a>
-    </header>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h1>Web Scraping Demo</h1>
+        <p>Explore a static chatbot experience powered by browser-side JavaScript.</p>
+        <div class="panel">
+          <h2>What works on GitHub Pages</h2>
+          <ul>
+            <li>Responsive chatbot UI</li>
+            <li>Local quote suggestions</li>
+            <li>Static dataset browsing</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>What is unavailable</h2>
+          <p>Python-based scraping and backend processing cannot run on GitHub Pages.</p>
+        </div>
+      </aside>
 
-    <main>
-      <section id="dataset" class="card">
-        <h2>What this project includes</h2>
-        <ul>
-          <li>Python scraper using BeautifulSoup</li>
-          <li>CSV dataset output</li>
-          <li>Simple website to showcase the project</li>
-        </ul>
-      </section>
+      <main class="chat-area">
+        <header class="chat-header">
+          <div>
+            <h2>Chatbot UI</h2>
+            <p>Ask about the dataset, scraping flow, or project goals.</p>
+          </div>
+        </header>
 
-      <section class="card">
-        <h2>Project Files</h2>
-        <p>Use the scraper script to generate data, and open this page to present the project.</p>
-      </section>
-    </main>
+        <section id="messages" class="messages" aria-live="polite"></section>
 
-    <footer>
-      <p>Created by psharmaner-cell</p>
-    </footer>
+        <form id="chat-form" class="composer">
+          <input id="user-input" type="text" placeholder="Type your message..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
